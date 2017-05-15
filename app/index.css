@@ -16,28 +16,47 @@ body {
 .column {
 	display: flex;
 	flex-direction: column;
-	width: 500px;
+	width: 450px;
 	align-items: center;
+	margin-top: 3em;
 }
 
 .column input {
-	border-radius: 3px;
+	border-radius: 2px;
 	margin: 10px 0;
-	padding: 5px;
+	padding: 6px;
 	font-size: 16px;
-	width: 80%;
+	width: 75%;
+	border: 2px solid #336699;
+}
+
+.column input:focus {
+	box-shadow: 0px 0px 15px #336699;
 }
 
 .column label {
 	text-align: center;
 	font-size: 30px;
-	font-weight: 200;
+	font-weight: 500;
+	background: -webkit-linear-gradient(#1e3d5b, #336699);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header {
 	text-align: center;
 	font-size: 30px;
-	font-weight: 200;
+	font-weight: bolder;
+	color: #1e3d5b;
+}
+
+.pop-header {
+	border-bottom: 4px double #1e3d5b;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #1e3d5b;
+	margin-bottom: -.5em;
 }
 
 ul {
@@ -49,9 +68,15 @@ li {
 }
 
 a {
+
 	text-decoration: none;
-	color: #D0021B;
 }
+
+.space-list-items li a {
+	text-decoration: underline;
+	color: #1e3d5b;
+}
+
 
 .languages {
 	display: flex;
@@ -73,10 +98,13 @@ a {
 .popular-item {
 	margin: 20px;
 	text-align: center;
+	text-decoration: none;
+	color: #1e3d5b;
 }
 
 .space-list-items {
 	margin-bottom: 7px;
+	color: #1e3d5b;
 }
 
 .avatar {
@@ -87,10 +115,16 @@ a {
 .popular-rank {
 	font-size:20px;
 	margin: 10px;
+	color: #777;
 }
 
 .nav {
 	display: flex;
+	font-size: 1.5em;
+	background: -webkit-linear-gradient(#1e3d5b, #336699);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .active {
@@ -99,35 +133,58 @@ a {
 
 .nav li {
 	margin-right: 15px;
+
 }
 
 .home-container {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+.home-title {
+	color: #3b3b3b;
+	display: inline-flex;
+	margin: 0 auto;
+}
+
+.home-subtitle {
+	color: #515151;	
+	display: flex;
+	margin-top: -.25em;
+	margin-bottom: 1.5em;
+}
+
 .button {
-	color: #e6e6e6;
-	background: #0a0a0a;
+	background: #336699;
+  background: -moz-linear-gradient(top, #336699 0%, #1e3d5b 100%); 
+  background: -webkit-linear-gradient(top, #336699 0%,#1e3d5b 100%);
+  background: linear-gradient(to bottom, #336699 0%,#1e3d5b 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336699', endColorstr='#1e3d5b',GradientType=0 );
+	color: #FFF;
 	border: none;
 	font-size: 16px;
 	border-radius: 3px;
-	width: 200px;
+	width: 12em;
 	text-align: center;
 	display: block;
 	padding: 7px 0;
-	margin: 10px auto;
+	margin: 4em auto;
 }
 
-.button:hover:enabled {
-	background: #1a1a1a;
+.button:hover {
+	background: #336699;
+  background: -moz-linear-gradient(top, #1e3d5b 0%, #336699 100%); 
+  background: -webkit-linear-gradient(top, #1e3d5b 0%,#336699 100%);
+  background: linear-gradient(to bottom, #1e3d5b 0%,#336699 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5b', endColorstr='#336699',GradientType=0 );
 	color: #FFF;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .button:active {
-	transform: translateY(1px);
+	transform: translateY(1.5px);
 }
 
 .reset {
@@ -141,4 +198,10 @@ a {
 
 .reset:hover {
 	cursor: pointer;
+}
+
+.newBattle {
+	display: block;
+	margin: 8em 2em;
+	
 }

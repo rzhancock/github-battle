@@ -2,6 +2,7 @@ var React = require('react');
 var PropTypes = require('prop-types');
 var Link = require('react-router-dom').Link;
 var PlayerPreview = require('./PlayerPreview');
+var Home = require('./Home');
 
 function PlayerPreview(props) {
 	return (
@@ -63,16 +64,16 @@ class PlayerInput extends React.Component {
 		return (
 			<form className='column' onSubmit={this.handleSubmit}>
 				<label className='header' htmlFor='username'>
-					{this.props.label}
+					Player <strong>{this.props.label}</strong>
 				</label>
-				<input
-					id='username'
-					placeholder='github username'
-					type='text'
-					autoComplete='off'
-					value={this.state.username}
-					onChange={this.handleChange}
-					/>
+					<input
+						id='username'
+						placeholder='GitHub username'
+						type='text'
+						autoComplete='off'
+						value={this.state.username}
+						onChange={this.handleChange}
+						/>
 					<button
 						className='button'
 						type='submit'
@@ -135,10 +136,13 @@ class Battle extends React.Component {
 		return (
 			<div>
 				<div className='row'>
+					<Home />
+				</div>
+				<div className='row'>
 					{!playerOneName &&
 						<PlayerInput 
 							id='playerOne'
-							label='Player One'
+							label='One'
 							onSubmit={this.handleSubmit}/>}
 
 					{playerOneImage !== null &&
@@ -156,7 +160,7 @@ class Battle extends React.Component {
 					{!playerTwoName &&
 						<PlayerInput 
 							id='playerTwo'
-							label='Player Two'
+							label='Two'
 							onSubmit={this.handleSubmit}/>}
 
 					{playerTwoImage !== null &&
@@ -176,7 +180,7 @@ class Battle extends React.Component {
 					<Link
 						className='button'
 						to={{
-							pathname: match.url + '/results',
+							pathname: '/results',
 							search: '?playerOneName=' + playerOneName + '&playerTwoName=' + playerTwoName
 						}}>
 							Battle
