@@ -5,11 +5,7 @@ var PropTypes = require('prop-types');
 function PlayerPreview(props) {
 	return (
 		<div>
-<<<<<<< HEAD
 			<div className='gb-column'>
-=======
-			<div className='column'>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 				<img 
 					className='avatar'
 					src={props.avatar}

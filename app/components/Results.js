@@ -31,11 +31,7 @@ Profile.propTypes = {
 function Player (props) {
 	return (
 		<div>
-<<<<<<< HEAD
 			<h1 className='gb-header'>{props.label}</h1>
-=======
-			<h1 className='header'>{props.label}</h1>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 			<h3 style={{textAlign: 'center'}}>Score: {props.score}</h3>
 			<Profile info={props.profile}/>
 		</div>
@@ -90,11 +86,7 @@ class Results extends React.Component {
 	}
 
 	render () {
-<<<<<<< HEAD
 		var error = this.state.error;
-=======
-		var error = this.state.erro;
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 		var winner = this.state.winner;
 		var loser = this.state.loser;
 		var loading = this.state.loading;
@@ -113,11 +105,7 @@ class Results extends React.Component {
 		}
 		return (
 			<div>
-<<<<<<< HEAD
 			<div className='gb-row'>
-=======
-			<div className='row'>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 				<Player
 					label='Winner'
 					score={winner.score}
@@ -130,11 +118,7 @@ class Results extends React.Component {
 					/>
 			</div>
 				<div className='newBattle'>
-<<<<<<< HEAD
 						<Link className='gb-button' to='/'>
-=======
-						<Link className='button' to='/'>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 							New Battle
 						</Link>
 					</div>	

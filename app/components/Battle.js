@@ -7,7 +7,6 @@ var Home = require('./Home');
 function PlayerPreview(props) {
 	return (
 		<div>
-<<<<<<< HEAD
 			<div className='gb-column'>
 				<img 
 					className='avatar'
@@ -15,25 +14,12 @@ function PlayerPreview(props) {
 					alt={'Avatar for ' + props.username} 
 				/>
 				<h2 className='username'>@{props.username}</h2>
-=======
-			<div className='column'>
-				<img 
-					className='avatar'
-					src={props.avatar}
-					alt={'Avatar for ' + props.username}
-					/>
-					<h2 className='username'>@{props.username}</h2>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 			</div>
 			<button
 				className='reset'
 				onClick={props.onReset.bind(null, props.id)}>
 					Reset
-<<<<<<< HEAD
 			 </button>
-=======
-			</button>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 		</div>
 	)
 }
@@ -76,13 +62,8 @@ class PlayerInput extends React.Component {
 
 	render() {
 		return (
-<<<<<<< HEAD
 			<form className='gb-column' onSubmit={this.handleSubmit}>
 				<label className='gb-header' htmlFor='username'>
-=======
-			<form className='column' onSubmit={this.handleSubmit}>
-				<label className='header' htmlFor='username'>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 					Player <strong>{this.props.label}</strong>
 				</label>
 					<input
@@ -94,11 +75,7 @@ class PlayerInput extends React.Component {
 						onChange={this.handleChange}
 						/>
 					<button
-<<<<<<< HEAD
 						className='gb-button'
-=======
-						className='button'
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 						type='submit'
 						disabled={!this.state.username}>
 							Submit
@@ -158,17 +135,10 @@ class Battle extends React.Component {
 
 		return (
 			<div>
-<<<<<<< HEAD
 				<div className='gb-row'>
 					<Home />
 				</div>
 				<div className='gb-row'>
-=======
-				<div className='row'>
-					<Home />
-				</div>
-				<div className='row'>
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 					{!playerOneName &&
 						<PlayerInput 
 							id='playerOne'
@@ -208,11 +178,7 @@ class Battle extends React.Component {
 
 				{playerOneImage && playerTwoImage &&
 					<Link
-<<<<<<< HEAD
 						className='gb-button'
-=======
-						className='button'
->>>>>>> e3e48e75054997eee6f1d41bd5e1c6f14fb18121
 						to={{
 							pathname: '/results',
 							search: '?playerOneName=' + playerOneName + '&playerTwoName=' + playerTwoName
