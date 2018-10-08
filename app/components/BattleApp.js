@@ -16,12 +16,12 @@ class BattleApp extends React.Component {
 			<div className='gb-container'>
 				<Nav />
 				<Switch>
-				<Route exact path='/' component={Battle} />
-				<Route path='/results' component={Results} />
-				<Route path='/popular' component={Popular} />
-				<Route render={function () {
-					return <p> Not Found</p>
-				}} />
+					<Route exact path='/github-battle/' component={Battle} />
+					<Route path='/github-battle/results' component={Results} />
+					<Route path='/github-battle/popular' component={Popular} />
+					<Route render={function () {
+						return <p> Not Found</p>
+					}} />
 				</Switch>
 			</div>
 			</Router>

@@ -180,7 +180,7 @@ class Battle extends React.Component {
 					<Link
 						className='gb-button'
 						to={{
-							pathname: '/results',
+							pathname: '/github-battle/results',
 							search: '?playerOneName=' + playerOneName + '&playerTwoName=' + playerTwoName
 						}}>
 							Battle
