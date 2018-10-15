@@ -121,7 +121,6 @@ a {
 	background: -webkit-linear-gradient(#1e3d5b, #336699);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	justify-content: space-between;
 }
 
 .active {
@@ -133,11 +132,6 @@ a {
 	list-style-type: none;
 	margin-right: 15px;
 
-}
-
-.goBack {
-	font-size: 16px;
-	margin-left: auto;
 }
 
 .home-container {
@@ -173,7 +167,7 @@ a {
 	text-align: center;
 	display: block;
 	padding: 7px 0;
-	margin: 4em auto;
+	margin: 2em auto;
 }
 
 .gb-button:hover {
@@ -207,6 +201,6 @@ a {
 
 .newBattle {
 	display: block;
-	margin: 4em 2em;
+	margin: 2em 1em;
 	
 }
